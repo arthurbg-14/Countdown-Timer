@@ -8,10 +8,26 @@ setInterval(()=>{
         const countdown = new Countdown(date-MS_PER_DAY)
         const timer = document.getElementsByTagName("h1")
 
-        timer[0].innerHTML = countdown.getDiferenceInDays()
-        timer[1].innerHTML = countdown.getDiferenceInHours()
-        timer[2].innerHTML = countdown.getDiferenceInMinutes()
-        timer[3].innerHTML = countdown.getDiferenceInSeconds()
+        if(new Date() - date < 0){
+            timer[0].innerHTML = countdown.getDiferenceInDays()
+            timer[1].innerHTML = countdown.getDiferenceInHours()
+            timer[2].innerHTML = countdown.getDiferenceInMinutes()
+            timer[3].innerHTML = countdown.getDiferenceInSeconds()
+            for (const element of timer){
+                if(element.innerHTML < 0){
+                    timer[0].innerHTML = "D"
+                    timer[1].innerHTML = "O"
+                    timer[2].innerHTML = "N"
+                    timer[3].innerHTML = "E"
+                }
+            }
+        }
+        else{
+            timer[0].innerHTML = "D"
+            timer[1].innerHTML = "O"
+            timer[2].innerHTML = "N"
+            timer[3].innerHTML = "E"
+        }
     }
 },1000)
 
