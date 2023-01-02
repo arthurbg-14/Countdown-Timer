@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(73, 194, 251);
+}
+.date {
+    position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	width: 14rem;
+    padding: 1rem;
+	background-color: white;
+	border-radius: 10px;
+    margin: auto;
+	box-shadow: none;
+    font-size: 25;
+    border: 0px solid transparent;
+}
+.countdown-container{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+}
+p {
+    margin: 1rem;
+    padding-top: 0.4rem;
+    align-items: center;
+    box-shadow: none;
+    border-top: 0.2rem solid black;
+    border-radius: 0.3rem;
+    font-size: 25;
+    display: flex;
+}
+.time-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column
+}
+h1 {
+    margin: auto;
+    text-align: center;
+}
